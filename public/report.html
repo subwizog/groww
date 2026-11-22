@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pocket money app for students: product report</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Inter, "Segoe UI", Roboto, sans-serif;
+    color: #1C1B22;
+    background: #FFFFFF;
+    line-height: 1.5;
+    font-size: 10.5pt;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    color: #14131A;
+    border-bottom: 2px solid #534AB7;
+    padding-bottom: 6pt;
+  }
+  h2 {
+    font-size: 13.5pt;
+    font-weight: 600;
+    margin-top: 16pt;
+    margin-bottom: 8pt;
+    color: #26215C;
+    border-bottom: 1px solid #EEEEF6;
+    padding-bottom: 3pt;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 8pt;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 8pt;
+    padding-left: 18pt;
+  }
+  li {
+    margin-bottom: 4pt;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8pt;
+    margin-bottom: 12pt;
+    font-size: 9.5pt;
+  }
+  th, td {
+    border: 1px solid #D5D4E0;
+    padding: 6pt 8pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background-color: #F4F3F7;
+    font-weight: 600;
+    color: #1C1B22;
+  }
+  tr:nth-child(even) td {
+    background-color: #FAFAFC;
+  }
+  strong {
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<h1>Pocket money app for students: product report</h1>
+<p><strong>Framework used</strong> is CIRCLES. The seven steps are Comprehend the situation, Identify the customer, Report the needs, Cut through with priorities, List solutions, Evaluate trade-offs, and Summarize.</p>
+<p><strong>Author</strong> [Your name]</p>
+<h2>How to read the numbers</h2>
+<p>Every number in this report is marked in one of three ways.</p>
+<ul>
+  <li><strong>Verified</strong> means a student told me this directly in my 5 conversations. These were students in different years, including a first year, a third year, and a postgraduate student.</li>
+  <li><strong>Sample</strong> means a made-up number used only to show how the app works.</li>
+  <li><strong>Guess</strong> means my own belief that I have not checked yet.</li>
+</ul>
+<table>
+  <tr><th>Claim</th><th>Status</th><th>Count</th></tr>
+  <tr><td>Most students on pocket money do not track spending</td><td>Verified</td><td>[fill in: X of 5]</td></tr>
+  <tr><td>Some paste expenses into an AI chatbot but fear leaking their finances</td><td>Verified</td><td>[fill in: X of 5]</td></tr>
+  <tr><td>Many run out of money before the month ends</td><td>Verified</td><td>[fill in: X of 5]</td></tr>
+  <tr><td>They cope with mess food, borrowing from friends, or asking parents again</td><td>Verified</td><td>[fill in: X of 5]</td></tr>
+  <tr><td>Tracking must be quick or they skip it</td><td>Verified</td><td>[fill in: X of 5]</td></tr>
+  <tr><td>Group payments are a big part of student spending</td><td>Guess</td><td>Seen myself, not counted</td></tr>
+  <tr><td>A night-time reminder would build the habit</td><td>Guess</td><td>Idea, not tested</td></tr>
+  <tr><td>Students would act on a nudge to invest</td><td>Guess</td><td>Not tested</td></tr>
+  <tr><td>Pocket money of ₹8,000 a month in the demo</td><td>Sample</td><td>Not real data</td></tr>
+</table>
+<h2>C: Comprehend the situation</h2>
+<ul>
+  <li><strong>The setting.</strong> Students who live in hostels or rented rooms away from home have no income. Parents send a fixed amount each month, and it has to cover food, travel, friends, shopping, and groceries.</li>
+  <li><strong>What happens today.</strong> Most students I spoke to do not track spending at all. A few sometimes paste expenses into an AI chatbot, but they worry about leaking their money details. Many run out before the month ends. They get by with the mess, borrowing from friends until the next transfer, or asking parents for more in the middle of the month.</li>
+  <li><strong>Why it matters.</strong> Running low early leads to small loans from friends and awkward calls home. It also leaves nothing to save. A student who can see the pattern can change it.</li>
+  <li><strong>Where Groww fits.</strong> The app is not an investing app. It helps a student make the money last and set a little aside, then points to Groww as the next step.</li>
+  <li><strong>Goal.</strong> Help a student make the monthly money last and keep a small amount aside.</li>
+  <li><strong>Limits we work within.</strong></li>
+  <li>GPay, PhonePe, and Paytm are closed apps, so we cannot add pop-ups inside them.</li>
+  <li>Only Android phones let an app read bank messages. iPhones do not.</li>
+  <li>The prototype is a web app, so it cannot read real messages. It uses a paste box instead.</li>
+  <li>One person builds it in a short time.</li>
+</ul>
+<h2>I: Identify the customer</h2>
+<p>The main customer is a student who lives away from home and depends on monthly pocket money from parents.</p>
+<table>
+  <tr><th>Person</th><th>Role</th><th>Why they matter</th></tr>
+  <tr><td>Student on pocket money</td><td>Main user</td><td>Feels the problem every month</td></tr>
+  <tr><td>Friends in a shared bill</td><td>Names inside a split</td><td>They do not need the app</td></tr>
+  <tr><td>Parents</td><td>Send the money</td><td>They pay but do not use the app</td></tr>
+</table>
+<ul>
+  <li><strong>Differences by year.</strong> I expect first years to be still learning how to handle money, and later years to have set habits. This is a guess, and I plan to check it in the next round of talks.</li>
+  <li><strong>Not the target for now.</strong> Working adults and the wider public. The same design could serve them later.</li>
+</ul>
+<h2>R: Report the needs</h2>
+<table>
+  <tr><th>#</th><th>The student needs to</th><th>Status</th></tr>
+  <tr><td>N1</td><td>See where the money went without much effort</td><td>Verified</td></tr>
+  <tr><td>N2</td><td>Know whether the money will last until the next transfer</td><td>Verified</td></tr>
+  <tr><td>N3</td><td>Keep money details private</td><td>Verified</td></tr>
+  <tr><td>N4</td><td>Record spending quickly, even when busy</td><td>Verified</td></tr>
+  <tr><td>N5</td><td>Split shared costs and get paid back without awkwardness</td><td>Guess</td></tr>
+  <tr><td>N6</td><td>Get a gentle push to save or invest a little</td><td>Guess</td></tr>
+  <tr><td>N7</td><td>Pay a friend from the same place</td><td>Guess</td></tr>
+</table>
+<p><strong>Pain points behind the needs</strong></p>
+<ul>
+  <li><strong>Nothing is tracked.</strong> Money disappears and the student only notices when the balance is low.</li>
+  <li><strong>No early warning.</strong> They find out they are short after it is too late to adjust.</li>
+  <li><strong>Borrowing loops.</strong> They borrow from friends and repay when parents send money, which hides the real gap.</li>
+  <li><strong>Privacy fear.</strong> Pasting bank details into a chatbot feels risky, so many avoid tracking altogether.</li>
+  <li><strong>Effort.</strong> If a payment is made in a hurry, they will not stop to log it.</li>
+</ul>
+<h2>C: Cut through with priorities</h2>
+<p>I rated each need on four things. <strong>Reach</strong> is how many students feel it. <strong>Pain</strong> is how much it hurts. <strong>Fit</strong> is how much it helps the main goal. <strong>Effort</strong> is how hard it is to build. These ratings are my own judgment, so they count as guesses until I test them.</p>
+<table>
+  <tr><th>Need</th><th>Reach</th><th>Pain</th><th>Fit</th><th>Effort</th><th>Rank</th></tr>
+  <tr><td>N1 See where money went</td><td>High</td><td>Medium</td><td>High</td><td>Medium</td><td>Must</td></tr>
+  <tr><td>N2 Know if money lasts</td><td>High</td><td>High</td><td>High</td><td>Low</td><td>Must</td></tr>
+  <tr><td>N3 Keep it private</td><td>High</td><td>High</td><td>High</td><td>Medium</td><td>Must</td></tr>
+  <tr><td>N4 Quick to record</td><td>High</td><td>High</td><td>High</td><td>Medium</td><td>Must</td></tr>
+  <tr><td>N5 Split shared costs</td><td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td><td>Should</td></tr>
+  <tr><td>N6 Nudge to save</td><td>Medium</td><td>Low</td><td>High</td><td>Low</td><td>Should</td></tr>
+  <tr><td>N7 Pay from the app</td><td>Medium</td><td>Low</td><td>Low</td><td>Low</td><td>Could</td></tr>
+</table>
+<ul>
+  <li><strong>Why N2 sits at the top.</strong> Running out early is the clearest pain students described, and the fix is cheap to build.</li>
+  <li><strong>Why N3 is a rule and not a feature.</strong> If students do not trust the app with their messages, nothing else matters. So every feature must respect it.</li>
+  <li><strong>Why N5 and N6 are second.</strong> They matter, but students need N1 to N4 working before they will use a split or a nudge.</li>
+</ul>
+<h2>L: List solutions</h2>
+<p><strong>For N1 and N4, recording spending</strong></p>
+<ul>
+  <li>A. A pop-up after every payment.</li>
+  <li>B. Read bank messages on the phone and fill in the details.</li>
+  <li>C. A short nightly check-in to add what was missed.</li>
+  <li>D. Upload the monthly bank statement.</li>
+  <li>E. Type each payment by hand.</li>
+</ul>
+<p><strong>For N2, knowing if the money will last</strong></p>
+<ul>
+  <li>A. A meter showing money left, safe spend per day, and current pace.</li>
+  <li>B. A weekly summary.</li>
+  <li>C. An alert when pace is too high.</li>
+</ul>
+<p><strong>For N3, privacy</strong></p>
+<ul>
+  <li>A. Read and sort messages on the phone only.</li>
+  <li>B. Send messages to a cloud service to sort them.</li>
+</ul>
+<p><strong>For N5, splitting</strong></p>
+<ul>
+  <li>A. A split feature inside the app.</li>
+  <li>B. A link to an existing split app.</li>
+</ul>
+<p><strong>For N6, saving</strong></p>
+<ul>
+  <li>A. A nudge with a link to Groww.</li>
+  <li>B. Investing inside our app.</li>
+</ul>
+<p><strong>For N7, paying</strong></p>
+<ul>
+  <li>A. A button that opens the student's own payment app.</li>
+  <li>B. Full connection with payment apps.</li>
+</ul>
+<p><strong>The app that comes out of this</strong> has five tabs. <strong>Home</strong> shows money left and the nudge. <strong>Budget</strong> sets a plan for each category. <strong>Insights</strong> shows where the money went. <strong>Split</strong> tracks shared costs. <strong>Add</strong> reads a pasted bank message. A gear icon opens settings, including the nightly check-in time.</p>
+<h2>E: Evaluate trade-offs</h2>
+<table>
+  <tr><th>Option</th><th>Decision</th><th>Why</th><th>What we give up</th></tr>
+  <tr><td>Pop-up after each payment</td><td>Drop</td><td>Students skip it when busy</td><td>Instant, exact records</td></tr>
+  <tr><td>Read bank messages</td><td>Choose</td><td>Needs almost no effort</td><td>iPhone support, for now</td></tr>
+  <tr><td>Nightly check-in</td><td>Choose</td><td>Catches what was missed</td><td>Some entries are late</td></tr>
+  <tr><td>Monthly statement upload</td><td>Later</td><td>Messages already cover it</td><td>Older history</td></tr>
+  <tr><td>Sort messages on the phone</td><td>Choose</td><td>Answers the privacy fear</td><td>Smarter cloud sorting</td></tr>
+  <tr><td>Built-in split</td><td>Choose</td><td>Replaces borrowing notes</td><td>Extra build time</td></tr>
+  <tr><td>Nudge linking to Groww</td><td>Choose</td><td>Keeps us outside investing rules</td><td>Investing in one tap</td></tr>
+  <tr><td>Connection with payment apps</td><td>Drop</td><td>Those apps are closed</td><td>Seamless payment</td></tr>
+  <tr><td>Open the payment app by link</td><td>Choose</td><td>Cheap and honest</td><td>Amount may need retyping</td></tr>
+  <tr><td>Advertisements</td><td>Drop</td><td>Breaks trust in a money app</td><td>Any ad income</td></tr>
+  <tr><td>Explaining why someone spent</td><td>Drop</td><td>Feels like judging</td><td>Simple labels only</td></tr>
+</table>
+<ul>
+  <li><strong>On advertisements.</strong> There will be none. A money tool that shows ads would not earn the trust it needs.</li>
+  <li><strong>On judging spending.</strong> Insights only report where money went, such as "₹X above plan so far". The student can mark a payment as luxury, and the app suggests this from the shop name, but it never says why someone spent.</li>
+  <li><strong>Impact on the student.</strong> They should see their month clearly, get an early warning when money is running low, and have fewer small loans and calls home. These are expected results and not yet proven.</li>
+  <li><strong>How we will know it works.</strong> I will watch how many payments get a category, how many days a week the student opens the app, and how often a student runs out before the next transfer. I will set targets only after the first round of testing.</li>
+</ul>
+<h2>S: Summarize</h2>
+<ul>
+  <li><strong>What we are building.</strong> A private, phone-first app for students on pocket money. It reads bank messages on the phone, shows where money went, warns early when money may run short, splits shared costs, and nudges a small saving toward Groww.</li>
+  <li><strong>Why this shape.</strong> It answers the four needs students raised most, which are seeing where money went, knowing if it will last, keeping data private, and recording quickly. Splitting and the nudge come next.</li>
+  <li><strong>What we gave up.</strong> Pop-ups, deep payment app connections, ads, iPhone message reading, and statement upload for now.</li>
+  <li><strong>Main risks.</strong> The habit may fade after a few days, and message reading works on Android only. Both are noted as open questions.</li>
+  <li><strong>Next test.</strong> Give the prototype to the same 5 students and ask three things. Would you use it for a week, what would make you stop, and does it feel safe with your messages.</li>
+</ul>
+</body>
+</html>
