@@ -179,7 +179,7 @@ export default function SettingsScreen() {
           Read the full CIRCLES framework product report for this app.
         </p>
         <a
-          href="/report.pdf"
+          href="report.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outlined"

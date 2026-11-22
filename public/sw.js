@@ -1,9 +1,8 @@
 const CACHE_NAME = 'pocket-money-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/report.pdf',
-  '/manifest.json'
+  './',
+  './index.html',
+  './report.pdf'
 ];
 
 self.addEventListener('install', (event) => {
